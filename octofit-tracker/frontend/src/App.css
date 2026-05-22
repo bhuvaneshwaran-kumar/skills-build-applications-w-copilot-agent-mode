@@ -12,6 +12,7 @@
 .navbar-brand {
   color: #162033;
   font-weight: 700;
+  padding: 5px 10px;
 }
 
 .navbar-brand:hover {

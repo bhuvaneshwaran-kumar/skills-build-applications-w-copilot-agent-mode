@@ -1,7 +1,7 @@
 ---
 mode: 'agent'
 model: GPT-5.5
-description: 'Create the Node.js logic tier for the Octofit multi-tier application'
+description: 'Fix the CORS error between the React/Vite frontend and the Node/Express API for the Octofit Tracker application'
 ---
 Fix the CORS error between the React/Vite frontend and the Node/Express API.
 
