@@ -7,7 +7,7 @@ import Workouts from './components/Workouts.jsx'
 import logo from '../../../docs/octofitapp-small.png'
 import './App.css'
 
-const codespaceName = import.meta.env.VITE_CODESPACE_NAME
+const codespaceName = import.meta.env.VITE_CODESPACE_NAME || "verbose-rotary-phone-xpxr45r9gjqh6g4r"
 
 export const apiBaseUrl = codespaceName
   ? `https://${codespaceName}-8000.app.github.dev/api`
