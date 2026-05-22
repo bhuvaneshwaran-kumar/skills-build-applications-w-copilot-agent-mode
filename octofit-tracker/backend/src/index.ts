@@ -1,3 +1,4 @@
+import cors from 'cors';
 import express from 'express';
 import { connectDatabase } from './config/database.js';
 import { apiBaseUrl, PORT } from './config/server.js';
@@ -10,6 +11,25 @@ import { usersRouter } from './routes/users.js';
 import { workoutsRouter } from './routes/workouts.js';
 
 const app = express();
+const codespaceFrontendOrigin = process.env.CODESPACE_NAME
+  ? `https://${process.env.CODESPACE_NAME}-5173.app.github.dev`
+  : undefined;
+const allowedOrigins = [
+  'http://localhost:5173',
+  'http://127.0.0.1:5173',
+  codespaceFrontendOrigin
+].filter((origin): origin is string => Boolean(origin));
+
+app.use(cors({
+  origin(origin, callback) {
+    if (!origin || allowedOrigins.includes(origin)) {
+      callback(null, true);
+      return;
+    }
+
+    callback(new Error(`CORS origin not allowed: ${origin}`));
+  }
+}));
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
