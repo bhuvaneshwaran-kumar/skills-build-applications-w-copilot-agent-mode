@@ -1,0 +1,95 @@
+.app-shell {
+  min-height: 100vh;
+  background: #f7f9fc;
+}
+
+.app-header {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+}
+
+.navbar-brand {
+  color: #162033;
+  font-weight: 700;
+  padding: 5px 10px;
+}
+
+.navbar-brand:hover {
+  color: #162033;
+}
+
+.nav-link {
+  font-weight: 600;
+}
+
+.nav-link:not(.active):hover {
+  background: #eef4ff;
+}
+
+.eyebrow {
+  color: #3f7f6b;
+  font-size: 0.78rem;
+  letter-spacing: 0;
+}
+
+.api-status {
+  background: #ffffff;
+  border: 1px solid #dbe3ef;
+  border-radius: 8px;
+  padding: 0.85rem 1rem;
+}
+
+.api-status code {
+  color: #162033;
+}
+
+.data-panel {
+  background: #ffffff;
+  border: 1px solid #dbe3ef;
+  border-radius: 8px;
+  box-shadow: 0 10px 24px rgba(22, 32, 51, 0.06);
+}
+
+.data-panel-header {
+  border-bottom: 1px solid #e7edf5;
+  padding: 1rem 1.25rem;
+}
+
+.stat-pill {
+  background: #eaf7f1;
+  border: 1px solid #c9eadc;
+  border-radius: 999px;
+  color: #22614f;
+  font-weight: 700;
+  padding: 0.35rem 0.7rem;
+}
+
+.table {
+  margin-bottom: 0;
+}
+
+.table th {
+  color: #536174;
+  font-size: 0.78rem;
+  letter-spacing: 0;
+  text-transform: uppercase;
+}
+
+.table td,
+.table th {
+  padding: 0.9rem 1.25rem;
+  vertical-align: middle;
+}
+
+.empty-state,
+.error-state,
+.loading-state {
+  padding: 2rem 1.25rem;
+}
+
+.badge-soft {
+  background: #eef4ff;
+  border: 1px solid #d7e5ff;
+  color: #2f5f9f;
+}
